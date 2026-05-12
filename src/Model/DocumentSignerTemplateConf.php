@@ -203,7 +203,7 @@ class DocumentSignerTemplateConf implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['signer_index'] = isset($data['signer_index']) ? $data['signer_index'] : null;
         $this->container['needs_to_sign'] = isset($data['needs_to_sign']) ? $data['needs_to_sign'] : null;

@@ -178,7 +178,7 @@ class DocumentSigningLog implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['pdf'] = isset($data['pdf']) ? $data['pdf'] : null;
         $this->container['security_hash'] = isset($data['security_hash']) ? $data['security_hash'] : null;

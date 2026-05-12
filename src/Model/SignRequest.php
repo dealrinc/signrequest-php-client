@@ -329,7 +329,7 @@ class SignRequest implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['from_email'] = isset($data['from_email']) ? $data['from_email'] : null;
         $this->container['from_email_name'] = isset($data['from_email_name']) ? $data['from_email_name'] : null;

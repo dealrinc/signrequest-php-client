@@ -197,7 +197,7 @@ class InlineDocumentSignerIntegrationData implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['integration'] = isset($data['integration']) ? $data['integration'] : null;
         $this->container['integration_data'] = isset($data['integration_data']) ? $data['integration_data'] : null;

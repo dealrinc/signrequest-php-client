@@ -189,7 +189,7 @@ class InlinePrefillTags implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['external_id'] = isset($data['external_id']) ? $data['external_id'] : null;
         $this->container['text'] = isset($data['text']) ? $data['text'] : null;
