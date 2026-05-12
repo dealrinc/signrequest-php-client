@@ -353,7 +353,7 @@ class Document implements ModelInterface, ArrayAccess
      * @param mixed[] $data Associated array of property values
      *                      initializing the model
      */
-    public function __construct(array $data = null)
+    public function __construct(?array $data = null)
     {
         $this->container['url'] = isset($data['url']) ? $data['url'] : null;
         $this->container['team'] = isset($data['team']) ? $data['team'] : null;
